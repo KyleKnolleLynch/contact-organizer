@@ -11,9 +11,7 @@ const ContactItem = ({ contact }) => {
   const onDelete = () => {
     deleteContact(id);
     clearCurrent(contact);
-  }
-
-  
+  };
 
   return (
     <div className="card bg-light">
@@ -32,20 +30,25 @@ const ContactItem = ({ contact }) => {
       <ul className="list">
         {email && (
           <li className="list-li">
-            <i className="fas fa-envelope" />
-            {' '}{email}
-            </li>
+            <i className="fas fa-envelope" /> {email}
+          </li>
         )}
         {phone && (
           <li className="list-li">
-            <i className="fas fa-phone" />
-            {' '}{phone}
-            </li>
+            <i className="fas fa-phone" /> {phone}
+          </li>
         )}
       </ul>
       <p>
-        <button className="btn btn-dark btn-sm" onClick={() => setCurrent(contact)}>Edit</button>
-        <button className="btn btn-danger btn-sm" onClick={onDelete}>Delete</button>
+        <button
+          className="btn btn-dark btn-sm"
+          onClick={() => setCurrent(contact)}
+        >
+          Edit
+        </button>
+        <button className="btn btn-danger btn-sm" onClick={onDelete}>
+          Delete
+        </button>
       </p>
     </div>
   );
@@ -53,6 +56,6 @@ const ContactItem = ({ contact }) => {
 
 ContactItem.propTypes = {
   contact: PropTypes.object.isRequired
-}
+};
 
 export default ContactItem;

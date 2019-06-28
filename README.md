@@ -1,6 +1,6 @@
 #  Contact Organizer App
+##  Full MERN stack app using context api
 
-*  mongoDB Atlas
-*  express
+#### also utilizing..
 *  mongoose
 *  jsonwebtoken

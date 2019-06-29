@@ -42,7 +42,7 @@ export default ContactFilter;
 // import ContactContext from '../../context/contact/contactContext';
 
 // const ContactFilter = () => {
-//   const { filterContacts, clearFilter, filtered } = useContext(ContactContext);
+//   const { filterContacts, clearFilter } = useContext(ContactContext);
 //   const [text, setText] = useState('');
 
 //   return (

@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: rgb(185, 145, 236);
+  --primary-color: rgb(68, 57, 95);
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #bb0114;
@@ -374,6 +374,23 @@ table th {
 
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+/* CSSTransition Group*/
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
 }
 
 /* Mobile Styles */

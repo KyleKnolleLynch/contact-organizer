@@ -17,6 +17,7 @@ const ContactFilter = () => {
       filterContacts(e.target.value);
     } else {
       clearFilter();
+      text.current.value = '';
     }
   };
 
@@ -33,3 +34,33 @@ const ContactFilter = () => {
 };
 
 export default ContactFilter;
+
+////////////////////////////////////////////////////////////
+          // * Alternate Method using useState * //
+
+// import React, { useContext, useState } from 'react';
+// import ContactContext from '../../context/contact/contactContext';
+
+// const ContactFilter = () => {
+//   const { filterContacts, clearFilter, filtered } = useContext(ContactContext);
+//   const [text, setText] = useState('');
+
+//   return (
+//     <form>
+//       <input
+//         type="text"
+//         placeholder="Filter Contacts.."
+//         onChange={e => {
+//           if (e.target.value) {
+//             setText(e.target.value);
+//             filterContacts(text);
+//           } else {
+//             clearFilter();
+//           }
+//         }}
+//       />
+//     </form>
+//   );
+// };
+
+// export default ContactFilter;

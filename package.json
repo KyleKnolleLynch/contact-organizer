@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Contact organizer app",
   "main": "server.js",
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.10.0"
+  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",

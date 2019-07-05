@@ -4,7 +4,7 @@
   "description": "Contact organizer app",
   "main": "server.js",
   "engines": {
-    "node": "10.14.1",
+    "node": "10.16.0",
     "npm": "6.10.0"
   },
   "scripts": {
